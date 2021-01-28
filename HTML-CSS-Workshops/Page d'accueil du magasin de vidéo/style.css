@@ -1,0 +1,47 @@
+body {
+	padding-left: 10px;
+}
+.headerlist {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 40px;
+}
+.navlist {
+	float: left;
+	padding-right: 15px;
+	padding-top: 40px;
+}
+.navlist+.navlist:before {
+	padding-right: 15px;
+	content: '/'
+}
+ul {
+	margin-top: 20px;
+	list-style-type: none;
+}
+.headerlinks {
+	font-weight: bold;
+	font-size: 20px;
+}
+.headerlinks:hover {
+	text-decoration: underline;
+}
+.navlinks {
+	font-size: 20px;
+}
+.navlinks:hover {
+	text-decoration: underline;
+}
+img {
+	width: 200px;
+	height: 110px;
+	float: left;
+	}
+nav {
+	clear: left;
+}
+ol {
+	margin-left: -35px;
+	list-style-type: none;
+}
