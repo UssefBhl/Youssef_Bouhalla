@@ -1,0 +1,51 @@
+.notflex {
+	display: grid;
+}
+div {
+	font-weight: bold;
+	margin-left: 30%;
+	width: 35%;
+	border-style: solid;
+	border-color: white;
+	border-radius: 15px;
+	background-color: #da5552;
+	padding:30px;
+}
+body{
+	font-family: Arial,Helvetica;
+	background-color: #cc444b;
+}
+label {
+	color: white;
+}
+input,select {
+	border-style: solid;
+	border-color: grey;
+	border-radius: 6px;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+input.maxandmin {
+	width: 31%;
+	margin-left: 2%;
+	margin-right: 2%;
+
+}
+.notflex {
+	width: 100%
+}
+.fixwidth {
+	width: 94%
+}
+input[type=submit] {
+	border-style: none;
+	border-radius: 20px;
+	font-weight:bold;
+	color: black;
+	background-color: #e39695;
+}
+input[type=submit]:hover {
+	background-color: #df7373;
+	color: white;
+}

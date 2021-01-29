@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire de création d'un site web de portail immobilier en ligne</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<form>
+			<label for="search" class="notflex">Search</label>
+			<input type="text" name="search" placeholder="Search" class="notflex fixwidth">
+
+			<label class="notflex">Price</label>
+
+			<label for="min">min:</label>
+			<input type="number" name="min" class="maxandmin">
+
+			<label for="max">max:</label>
+			<input type="number" name="max" class="maxandmin">
+
+			<label for="chambres" class="notflex">Number of chambers</label>
+			<input type="number" name="chambres" min="3" max="6" class="notflex fixwidth">
+
+			<label class="notflex">House type</label>
+			<select class="notflex">
+				<option>Condominium</option>
+				<option>Apartment</option>
+				<option>Co-op</option>
+				<option>Townhome</option>
+				<option>Bungalow</option>
+				<option>Ranch-Style</option>
+				<option>Cottage</option>
+			</select>
+
+			<input type="submit" name="SearchButton" value="Search" class="notflex">
+		</form>
+	</div>
+</body>
+</html>
