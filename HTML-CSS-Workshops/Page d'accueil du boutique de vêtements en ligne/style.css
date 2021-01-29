@@ -1,0 +1,35 @@
+header:before,
+nav:before,
+footer:before {
+	content: "<";
+}
+header:after,
+nav:after,
+footer:after {
+	content: ">";
+}
+header,
+nav,
+section,
+footer {
+	background: #659494;
+    border-radius: 5px;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+div {
+	margin-left: 25px;
+	margin-right: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	padding: 30px;
+	width: 200px
+}
+.products {
+	display: flex;
+}
