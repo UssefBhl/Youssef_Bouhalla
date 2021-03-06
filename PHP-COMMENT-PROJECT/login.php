@@ -12,6 +12,7 @@
             <input type="text" id="username" name="username">
             <input type="password" id="pass" name="pass">
             <button type="submit" name="login" id="login">LogIn</button>
+            <a href="signup.php">Create an account!</a>
         </form>
     </div>
 </body>
