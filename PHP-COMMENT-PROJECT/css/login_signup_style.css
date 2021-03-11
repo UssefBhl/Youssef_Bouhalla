@@ -25,6 +25,7 @@
     grid-area: 1/2/4/3;
     width: 100%;
     margin: auto;
+    box-shadow: 4px 4px 8px 1px rgba(37, 37, 37, 0.616);
 }
 .container #formlogin {
     height : 65%;
@@ -111,8 +112,14 @@ a{
 #create{
     grid-area : 5/1/6/3;
 }
-p{
+.error{
     grid-area: 1/2/2/3;
     color: #F3F1F1;
     margin: 20px auto;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    color: #636363;
+    margin: auto 2%;
 }

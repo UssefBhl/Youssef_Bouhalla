@@ -1,5 +1,6 @@
 <?php
     include_once('connection.php');
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,13 +8,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/loginsignupstyle.css">
+    <link rel="stylesheet" href="css/login_signup_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <title>Log In</title>
 </head>
 <body>
     <div class="container" role="main">
+        <p class="logo">BHL</p>
         <?php
             if (isset($_POST['login']) && isset($_POST['username']) && isset($_POST['pass'])) {
                 $username = mysqli_query($connect,'SELECT username FROM user WHERE username = "' .$_POST['username'] .'"' );
@@ -21,11 +23,11 @@
                 $pass = mysqli_fetch_assoc($password);
                 $number_of_users = mysqli_num_rows($username);
                 if ($number_of_users == 0) {
-                    echo "<p>the username does not exist</p>";
+                    echo "<p class='error'>the username does not exist</p>";
                 }elseif ($pass['motdepass'] != $_POST['pass']) {
-                    echo "<p>the password is incorrect</p>";
+                    echo "<p class='error'>the password is incorrect</p>";
                 }else {
-                    // $_SESSION['username'] = $_POST['username'];
+                    $_SESSION['username'] = $_POST['username'];
                     header('Location: comments.php');
                 }
             }
@@ -43,6 +45,7 @@
             <button type="submit" name="login" id="login">Log In</button>
             <a href="signup.php" id="create">Create an account!</a>
         </form>
+        
     </div>
 </body>
 </html>
