@@ -14,15 +14,20 @@
 </head>
 <body>
     <div class="container" role="main">
-        <p id="logo">BHL</p>
+        <p class="logo">BHL</p>
         <?php
 
             if (isset($_POST['signup']) && isset($_POST['username']) && isset($_POST['pass']) && isset($_POST['reppass'])) {
                 
                 $usename_len = strlen($_POST['username']);
                 $pass_len = strlen($_POST['pass']);
-
-                if ($usename_len > 8 && $usename_len < 3) {
+                $username = $_POST['username'];
+                $query = "SELECT username FROM user WHERE username = '$username'";
+                $result = mysqli_query($connect,$query);
+                $number_of_rows = mysqli_num_rows($result);
+                if ($number_of_rows != 0) {
+                    echo "<p class='error'>this username already exist</p>";
+                }elseif ($usename_len > 8 && $usename_len < 3) {
                     echo "<p class='error'>the username must be between 3 and 8 characters</p>";
                 }elseif ($pass_len > 10 && $pass_len < 3) {
                     echo "<p class='error'>the password must be between 3 and 10 characters</p>";

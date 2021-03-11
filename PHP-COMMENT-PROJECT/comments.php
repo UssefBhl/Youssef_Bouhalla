@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header('Location: login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +41,7 @@ session_start();
 </head>
 <body>
     <div class="container" role="main">
+        
         <p id="logo">BHL</p>
         <div class="comment_section">
             <div class="comments">
@@ -49,7 +54,7 @@ session_start();
                 </button>
             </form>
         </div>
-        <form class="profile" method="post">
+        <form class="profile" method="post" id="formlogout">
             <img src="img/thumb-1920-764519.jpg" alt="profile" width="50" height="50" id="prfimg">
             <p id="user"><?php echo $_SESSION['username']; ?></p>
             <button type="submit" name="logout" id="logout">Log out</button>
