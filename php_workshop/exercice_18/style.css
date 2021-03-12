@@ -1,0 +1,37 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.myform{
+    display: grid;
+    grid-row-gap: 2vh;
+    margin: auto;
+    width: 50%;
+}
+.myform :is(#email, #message) {
+    background-color: lightgray;
+    height: 30px;
+    outline: 0;
+    border: none;
+    border-radius: 30px;
+    padding: 2%;
+    width: 60%;
+    margin: auto;
+}
+.myform #message{
+    height: 100px;
+    width: 60%;
+    resize: none;
+}
+.myform button{
+    width: 60%;
+    border: none;
+    outline: 0;
+    height: 30px;
+    border-radius: 30px;
+    margin: auto;
+    background-color: lightsalmon;
+}
+.myform button:hover{
+    background-color: lightpink;
+}
