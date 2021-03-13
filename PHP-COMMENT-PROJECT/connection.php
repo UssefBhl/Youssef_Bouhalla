@@ -1,7 +1,7 @@
 <?php
     $server = "localhost";
     $username = "root";
-    $password = "";
+    $password = "yareyaredaze";
     $database = "comment_section";
 
     $connect = mysqli_connect($server,$username,$password,$database);

@@ -1,11 +1,8 @@
 <?php
-    include_once('connection.php');
-    $query = 'SELECT username FROM user';
-    $result = mysqli_query($connect, $query);
-    
-    while ($resultarray = mysqli_fetch_row($result)) {
-        echo $resultarray[0];
+session_start();
+   if(isset($_SESSION['username'])){
+        header('Location: comments.php');
+    }else {
+        header('Location: login.php');
     }
-    
-    
 ?>
