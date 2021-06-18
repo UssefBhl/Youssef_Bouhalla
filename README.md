@@ -2,7 +2,7 @@
 
 ## I'm a Student, Developer, and CSS lover ❤!!
 
-- 🌱 I’m currently learning Vue.js 🤣
+- 🌱 I’m currently learning Vue.js
 - 👯 I’m looking to collaborate with others
 - 🥅 2021 Goals: start freelancing and improve myself more and more
 - ⚡ Fun fact: I love to share arts especially pixel arts
@@ -13,9 +13,9 @@
 
 ### Connect with me:
 
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][https://www.facebook.com/profile.php?id=100013575014881]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][https://www.linkedin.com/in/youssef-bouhalla-745b1b213/]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][https://www.instagram.com/ussef_bhl/]
+[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://www.facebook.com/profile.php?id=100013575014881)
+[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/youssef-bouhalla-745b1b213/)
+[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />](https://www.instagram.com/ussef_bhl/)
 
 <br />
 
